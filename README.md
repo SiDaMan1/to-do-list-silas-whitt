@@ -1,3 +1,5 @@
 # to-do-list-silas-whitt
 
-this is my to-do list
+silas whitt 8/26/25
+
+this is a to do list for an inclass project that we have not started yet
