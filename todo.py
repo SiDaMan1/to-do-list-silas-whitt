@@ -8,6 +8,8 @@ def add_task(task):
     tasks.append(task)
 
 # Step 3: View tasks
+def view_tasks(tasks):
+    print(tasks)
 
 # Step 4: Delete a task
 
@@ -22,7 +24,7 @@ def add_task(task):
 if __name__ == "__main__":
     add_task("Finish Cyber 201 assignment")
     add_task("Push code to GitHub")
-    view_tasks()
+    view_tasks(tasks)
     mark_complete(0)
     view_tasks()
     save_tasks()
