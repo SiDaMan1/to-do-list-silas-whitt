@@ -17,8 +17,9 @@ def delete_task(location, tasks):
 
 
 # Step 5: Mark task complete
-
-
+def mark_complete(tasks):
+    completed_location= int(input("what is the location of the file you would like to mark complete?"))
+    tasks[completed_location] = str(tasks[completed_location]) + " ✅"
 # Step 6: Save/load tasks (extra stretch for today)
 
 
@@ -28,6 +29,7 @@ if __name__ == "__main__":
     add_task("Push code to GitHub")
     view_tasks(tasks)
     delete_task(0,tasks)
-    mark_complete()
+    view_tasks(tasks)
+    mark_complete(tasks)
     view_tasks(tasks)
     save_tasks()
