@@ -12,7 +12,7 @@ def view_tasks(tasks):
     print(tasks)
 
 # Step 4: Delete a task
-def mark_complete(location, tasks):
+def delete_task(location, tasks):
     tasks.pop(location)
 
 
@@ -27,6 +27,7 @@ if __name__ == "__main__":
     add_task("Finish Cyber 201 assignment")
     add_task("Push code to GitHub")
     view_tasks(tasks)
-    mark_complete(0, tasks)
+    delete_task(0,tasks)
+    mark_complete()
     view_tasks(tasks)
     save_tasks()
